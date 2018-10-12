@@ -3,12 +3,40 @@
 <head>
 <meta charset="utf-8">
 <title>Block-Level Elements </title>
+<style>
+body {
+    margin: 40px;
+    padding: 40px;
+    background-color: #BE5;
+    border: 2px dashed #573;
+}
+h1, footer {
+    text-align: center;
+}
+p, pre {
+    margin-left: 15px;
+}
+.first {
+    background-color: #FF9;
+    border: 2px dotted #000;
+}
+.second {
+    background-color: #CF9;
+    border: 2px solid #880;
+}
+#first {
+    color: #373;
+}
+#second {
+    color: #040;
+}
+</style>
 </head>
 <body>
 <!-- content starts below here -->
 <h1>Block-Level Elements</h1>
-<h2>Text in a Preformated Element</h2>
-<pre>This             text
+<h2 id="first">Text in a Preformated Element</h2>
+<pre class="first">This             text
 
         spans              several
    lines
@@ -18,8 +46,8 @@
 
 whitespace.
    </pre>
-<h2>Same text in a Paragraph Element</h2>
-<p>This             text
+<h2 id="second">Same text in a Paragraph Element</h2>
+<p class="second">This             text
 
         spans              several
    lines
@@ -35,6 +63,8 @@ whitespace.
 <footer style="text-align: center;">
 <a href="http://validator.w3.org/check/referer">
 <strong> HTML </strong> Valid! </a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+<strong> CSS </strong> It Validates! </a>
 </footer>
 </body>
 </html>
